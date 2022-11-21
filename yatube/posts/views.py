@@ -17,7 +17,10 @@ def get_page(stack, request):
 @cache_page(20)
 def index(request):
     return render(request, 'posts/index.html', {
-        'page_obj': get_page(Post.objects.all(), request),
+        'page_obj': get_page(
+            Post.objects.select_related('group', 'author').all(),
+            request
+        ),
     })
 
 

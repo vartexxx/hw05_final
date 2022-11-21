@@ -30,7 +30,7 @@
             </p>
             {% if post.author == user %}
                 <a class="btn btn-primary" href="{% url 'posts:post_edit' post.pk %}">
-                    Редактировать запись
+                    Редактировать пост
                 </a>
             {% endif %}
         </article>

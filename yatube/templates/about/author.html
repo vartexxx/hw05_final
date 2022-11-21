@@ -1,9 +1,186 @@
 {% extends "base.html" %}
 {% block title %}Об авторе проекта{% endblock %}
 {% block content %}
-<h1>Привет, я автор</h1>
-<p>
-  Тут я размещу информацию о себе, используя свои умения верстать.
-  Картинки, блоки, элементы бустрап. А может быть, просто напишу несколько абзацев текста. 
-</p>
+  <article class="resume-wrapper text-center position-relative">
+    <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
+      <div class="resume-body p-5">
+        <section class="resume-section summary-section mb-5">
+          <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Почему я выбрал программирование</h2>
+          <div class="resume-section-content">
+            <p class="mb-0">Отучившись 4 года на нефтегазовом деле, я понял, что данная сфера абсолютно полностью технологически мёртвая. 
+              В этой сфере достаточно мало новых технологий, а их внедрение успешно парируется "старым поколением", которым оптимально вносить данные 
+              о Газогидродинамических исследованиях скважин на лопух прям около скважины, нежели с помощью например Телеграмм-бота.
+              При защите диплома, мною была написана программа на языке Python, которая является Телеграмм-ботом, и позволяет проводить 
+              Газогидродинамические исследования газовых скважин на стационарных режимах работы, проводить интерпретацию кривых падения и восстановления давления 
+              (КВД, КПД) и позволяет вносить изменения в локальную базу данных на устройстве, используя SQLite, и на самом сервере используя MySQL.
+              В дальнейшем данная дипломная работа будет разрабатываться как проект стартапа в магистратуре, используя полученные на ЯП навыки, я смогу сделать современный и красивый сайт для данной программы.</p>
+          </div>
+        </section>
+        <div class="row">
+          <div class="col-lg-9">
+            <section class="resume-section experience-section mb-5">
+              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Опыт работы над проектами (будет пополняться)</h2>
+              <div class="resume-section-content">
+                <div class="resume-timeline position-relative">
+                  <article class="resume-timeline-item position-relative pb-5">
+                    
+                    <div class="resume-timeline-item-header mb-2">
+                      <div class="d-flex flex-column flex-md-row">
+                          <h3 class="resume-position-title font-weight-bold mb-1">Шаблон проекта Everland</h3>
+                          <div class="resume-company-name ms-auto">Everland</div>
+                      </div>
+                      <div class="resume-position-time">2022 - н.в.</div>
+                    </div>
+                    <div class="resume-timeline-item-desc">
+                      <p>Один из учебных проектов, реального заказчика от Яндекс Практикума на курсе Frontend-разработки</p>
+                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Ссылка на проект: <a class="text-reset text-link" href="https://github.com/vartexxx/everland_project/tree/develop" target='_blank'>Проект Everland</a></h4>
+                      <p>В данном проекте я был выбран в роли тимлида, команда состояла из нескольких человек. Команда и сам проект представлены в открытом репозитории в ветке develop.</p>
+                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Участники команды:</h4>
+                      <ul>
+                        <li>Владислав Бурлака</li>
+                        <li>Николай Фаюстов</li>
+                        <li>Надежда Исханова</li>
+                        <li>Константин Бузунов</li>
+                        <li>Максим Чаликов</li>
+                        <li>Максим Шастин</li>
+                      </ul>
+                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Используемые технологии:</h4>
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">CSS</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Flex</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Grid Layot</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Методология БЭМ</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Java-script</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Figma</span></li>
+                      </ul>
+                    </div>
+                  </article>
+
+                  <article class="resume-timeline-item position-relative pb-5">
+                    <div class="resume-timeline-item-header mb-2">
+                      <div class="d-flex flex-column flex-md-row">
+                          <h3 class="resume-position-title font-weight-bold mb-1">Проект Yatube</h3>
+                          <div class="resume-company-name ms-auto">Yatube</div>
+                      </div>
+                      <div class="resume-position-time">2022 - н.в.</div>
+                    </div>
+                    <div class="resume-timeline-item-desc">
+                      <p>Учебный проект Яндекс Практикума курса "Python-разработчик плюс" по созданию соцсети Yatube</p>
+                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Данный проект находится в стадии разработки</h4>
+                      <p>Пройдено всего 6 спринтов</p>
+                      <h4 class="resume-timeline-item-desc-heading font-weight-bold">Используемые технологии:</h4>
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Python</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Django</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">HTML/CSS</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Bootstrap</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">SQLite</span></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-3">
+            <section class="resume-section skills-section mb-5">
+              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Навыки</h2>
+              <div class="resume-section-content">
+                  <div class="resume-skill-item">
+                    <h4 class="resume-skills-cat font-weight-bold">Frontend</h4>
+                    <ul class="list-unstyled mb-4">
+                      <li class="mb-2">
+                          <div class="resume-skill-name">
+                            Java-Script
+                          </div>
+                        <div class="progress resume-progress">
+                          <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                          <div class="resume-skill-name">React</div>
+                        <div class="progress resume-progress">
+                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                          <div class="resume-skill-name">Node.js</div>
+                        <div class="progress resume-progress">
+                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                      <li class="mb-2">
+                          <div class="resume-skill-name">HTML/CSS/SASS/LESS</div>
+                        <div class="progress resume-progress">
+                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="resume-skill-item">
+                      <h4 class="resume-skills-cat font-weight-bold">Backend</h4>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                          <div class="resume-skill-name">Python/Django</div>
+                        <div class="progress resume-progress">
+                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                      </li>
+                      <li class="mb-2">
+                          <div class="resume-skill-name">C++</div>
+                        <div class="progress resume-progress">
+                        <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    </ul>
+                  </div>
+                  
+                  <div class="resume-skill-item">
+                      <h4 class="resume-skills-cat font-weight-bold">Остальное</h4>
+                      <ul class="list-inline">
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Git</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Webpack</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Photoshop</span></li>
+                        <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Figma</span></li>
+                      </ul>
+                  </div>
+              </div>
+            </section>
+            <section class="resume-section education-section mb-5">
+              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Образование</h2>
+              <div class="resume-section-content">
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                      <div class="resume-degree font-weight-bold">Нефтегазовое дело (Бакалавр)</div>
+                      <div class="resume-degree-org">Уфимский государственный нефтяной технический университет</div>
+                      <div class="resume-degree-time">2018-2022</div>
+                  </li>
+                  <li class="mb-2">
+                    <div class="resume-degree font-weight-bold">Нефтегазовое дело (Магистратура)</div>
+                    <div class="resume-degree-org">Уфимский государственный нефтяной технический университет</div>
+                    <div class="resume-degree-time">2022 - н.в.</div>
+                </li>
+                  <li>
+                      <div class="resume-degree font-weight-bold">Прикладная информатика (Бакалавр)</div>
+                      <div class="resume-degree-org">Уфимский государственный авиационный технический университет</div>
+                      <div class="resume-degree-time">2020 - н.в.</div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="resume-section interests-section mb-5">
+              <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
+              <div class="resume-section-content">
+                <ul class="list-unstyled">
+                  <li class="mb-1">Мотокросс</li>
+                  <li class="mb-1">Сноуборд</li>
+                  <li class="mb-1">Программирование</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article> 
 {% endblock %}
